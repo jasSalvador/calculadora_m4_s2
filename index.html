@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script defer src="./assets/js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/img/346399.png">
+    <title>Calculadora</title>
+</head>
+<body>
+        <div class="calculadora text-center mx-auto mt-5">
+            <!--pantalla-->
+                <input type="text" name="" value="" class="pantalla" id="pantalla">
+            
+            <!--botones-->
+            <div class="botones">
+                <button class="operador" type="submit" onclick="calculadora('+')">+</button>
+                <button class="operador" type="submit" onclick="calculadora('-')">-</button>
+                <button class="operador" type="submit" onclick="calculadora('*')">*</button>
+                <button class="operador" type="submit" onclick="calculadora('/')">/</button>
+                <!--numeros-->
+                <button type="submit" onclick="calculadora('9')">9</button>
+                <button type="submit" onclick="calculadora('8')">8</button>
+                <button type="submit" onclick="calculadora('7')">7</button>
+                <button type="submit" onclick="calculadora('6')">6</button>
+                <button type="submit" onclick="calculadora('5')">5</button>
+                <button type="submit" onclick="calculadora('4')">4</button>
+                <button type="submit" onclick="calculadora('3')">3</button>
+                <button type="submit" onclick="calculadora('2')" >2</button>
+                <button type="submit" onclick="calculadora('1')">1</button>
+                <button type="submit" onclick="calculadora('0')">0</button>
+
+                <!--simbolos-->
+                <button type="submit" onclick="decimal('.')">.</button>
+                <button class="borrar" type="submit" value="ac" onclick="limpiarPantalla()">AC</button>
+                <button type="submit" class="igual" value="=" onclick="resultado()">=</button>
+            </div>
+        </div>
+</body>
+</html>
